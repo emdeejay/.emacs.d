@@ -1,11 +1,12 @@
-(package-initialize)
+;; I like my own elisp in it's own spot
+(add-to-list 'load-path (expand-file-name (concat user-emacs-directory "mylisp")))
+
+;; Use my package syncher
+(require 'package-sync)
 
 ;; Move customize
 (setq custom-file (expand-file-name (concat user-emacs-directory "custom.el")))
 (load custom-file)
-
-;; I like my own elisp in it's own spot
-(add-to-list 'load-path (expand-file-name (concat user-emacs-directory "mylisp")))
 
 (require 'flymake-python-pyflakes)
 
@@ -17,5 +18,4 @@
 
 (define-coding-system-alias 'UTF-8 'utf-8)
 (setq x-alt-keysym 'meta) ; Force ALT to be meta in my keybindings world.
-
 
