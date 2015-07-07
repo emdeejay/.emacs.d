@@ -9,7 +9,6 @@
     ("7ceb8967b229c1ba102378d3e2c5fef20ec96a41f615b454e0dc0bfa1d326ea6" default)))
  '(flymake-gui-warnings-enabled nil)
  '(inhibit-startup-screen t)
- '(iswitchb-mode t)
  '(menu-bar-mode nil)
  '(package-archives
    (quote
