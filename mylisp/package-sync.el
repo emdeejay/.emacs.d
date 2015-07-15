@@ -26,6 +26,11 @@
 (add-hook 'kill-emacs-hook #'update-installed-packages)
 
 (defun install-missing-packages ()
+  (save-excursion
+  (find-file installed-packages-file)
+  (vc-update)
+  (eval-buffer)
+  (kill-buffer))
   (dolist (pkg installed-packages)
     (package-install pkg)))
 
