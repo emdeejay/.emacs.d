@@ -23,4 +23,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :background "#000000" :foreground "#F6F3E8" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 130 :width normal :foundry "unknown" :family "DejaVu Sans Mono"))))
+ '(aw-leading-char-face ((t (:foreground "red" :height 2.0))))
  '(flymake-warnline ((t (:underline (:color "Yellow1" :style wave))))))
