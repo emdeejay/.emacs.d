@@ -15,7 +15,10 @@
 ;; Load my keybindings
 
 (require 'my-global-keybindings)
+(require 'python-snippets)
 
+;; Anciliary changes I have no better place for right now
+(defalias 'yes-or-no-p 'y-or-n-p)
 (define-coding-system-alias 'UTF-8 'utf-8)
 (setq x-alt-keysym 'meta) ; Force ALT to be meta in my keybindings world.
 

@@ -10,6 +10,8 @@
  '(flymake-gui-warnings-enabled nil)
  '(inhibit-startup-screen t)
  '(menu-bar-mode nil)
+ '(org-agenda-files (quote ("~/")))
+ '(org-log-done (quote time))
  '(package-archives
    (quote
     (("gnu" . "http://elpa.gnu.org/packages/")
